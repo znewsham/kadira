@@ -1,8 +1,8 @@
 Package.describe({
   "summary": "Performance Monitoring for Meteor",
   "version": "2.30.2",
-  "git": "https://github.com/meteorhacks/kadira.git",
-  "name": "meteorhacks:kadira"
+  "git": "https://github.com/znewsham/kadira.git",
+  "name": "znewsham:kadira"
 });
 
 var npmModules = {
@@ -90,6 +90,7 @@ function configurePackage(api) {
     api.use('meteorhacks:meteorx@1.4.1', ['server']);
     api.use('meteorhacks:zones@1.2.1', {weak: true});
   }
+  api.use('webapp@1.4.0', ['server']);
 
   api.use([
     'minimongo', 'livedata', 'mongo-livedata', 'ejson', 'ddp-common',
@@ -121,6 +122,8 @@ function configurePackage(api) {
     'lib/models/errors.js',
     'lib/docsize_cache.js',
     'lib/kadira.js',
+    'lib/hijack/wrap_connectHandlers.js',
+    'lib/hijack/wrap_defer.js',
     'lib/hijack/wrap_server.js',
     'lib/hijack/wrap_session.js',
     'lib/hijack/wrap_subscription.js',
