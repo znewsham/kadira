@@ -92,6 +92,7 @@ function configurePackage(api) {
   }
   api.use('webapp@1.4.0', ['server']);
 
+  api.use("ecmascript");
   api.use([
     'minimongo', 'livedata', 'mongo-livedata', 'ejson', 'ddp-common',
     'underscore', 'http', 'email', 'random'
