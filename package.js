@@ -1,6 +1,6 @@
 Package.describe({
   "summary": "Performance Monitoring for Meteor",
-  "version": "2.31.6",
+  "version": "2.31.7",
   "git": "https://github.com/znewsham/kadira.git",
   "name": "znewsham:kadira"
 });
